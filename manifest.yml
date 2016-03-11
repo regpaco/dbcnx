@@ -1,0 +1,11 @@
+---
+applications:
+- name: dbcnx
+  buildpack: https://github.com/regpaco/java-buildpack.git
+  memory: 512M 
+  instances: 1
+  host: dbcnx-yj
+  path: ./target/dbcnx.war
+  env:
+    JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
+    tomcat.context_path: foo

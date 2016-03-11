@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context displayName="PegaRULES">
+		<Resource name="jdbc/PegaRULES"
+				auth="Container"
+				type="javax.sql.DataSource"
+				maxActive="20"
+				maxIdle="10"
+				maxWait="-1"
+				driverClassName="org.postgresql.Driver"
+				url="jdbc:postgresql://pega7-2.cny9sju97ute.us-east-1.rds.amazonaws.com:5432/pega7_2"
+				username="pega"
+				password="abcd1234"
+				 />
+				
+<!--Environment name="url/initialization/explicittempdir" value="e:/Tomcat7/System1/work/Catalina/localhost/prweb" type="java.lang.String" /-->				
+<Environment name="prconfig/database/databases/PegaRULES/defaultSchema" value="rules" type="java.lang.String" />
+<Environment name="prconfig/database/databases/PegaDATA/defaultSchema" value="data" type="java.lang.String" />			
+				
+</Context>
